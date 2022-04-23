@@ -1,0 +1,66 @@
+##### Register
+POST http://127.0.0.1:5000/api/auth/register
+Content-Type: application/json
+
+{
+    "username":"BoongMai1",
+    "password":"1234"
+}
+
+################################
+
+
+GET http://localhost:5000/
+
+######## Login
+
+POST http://127.0.0.1:5000/api/auth/login
+Content-Type: application/json
+
+{
+    "username":"BoongMai1",
+    "password":"1234"
+}
+
+######## Create Post
+
+POST http://127.0.0.1:5000/api/posts/
+Content-Type: application/json
+Authorization: ThanhDy eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjUyZmIzOWE1YzU2NjNhMDNjNzFjYjYiLCJpYXQiOjE2NDk2ODc4Njh9.Bnm98Ut4ZbJ2NguEIDLBml_vQed1lI8ELXGI6vZ0Itw
+
+{
+    "title":"Bông Mai1 Post2",
+    "description":"Cái này lần 1",
+    "url":"github.com/BoongMai",
+    "status":"Learning"
+}
+
+################################ Get post
+
+GET http://127.0.0.1:5000/api/posts/
+Authorization: ThanhDuy eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjUyZmIzOWE1YzU2NjNhMDNjNzFjYjYiLCJpYXQiOjE2NDk2ODc4Njh9.Bnm98Ut4ZbJ2NguEIDLBml_vQed1lI8ELXGI6vZ0Itw
+
+######## UpdatePost
+
+PUT  http://127.0.0.1:5000/api/posts/6257c6b0e65075bdb05d5465
+Content-Type: application/json
+Authorization: ThanhDuy eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjUyZmIzOWE1YzU2NjNhMDNjNzFjYjYiLCJpYXQiOjE2NDk2ODc4Njh9.Bnm98Ut4ZbJ2NguEIDLBml_vQed1lI8ELXGI6vZ0Itw
+
+{
+    "title":"Update Post BoongMai 2",
+    "description":"Cái này update lần 1",
+    "url":"vclvcl.com",
+    "status":"Learning"
+}
+
+
+
+######## Delete post
+
+DELETE   http://127.0.0.1:5000/api/posts/6257c57de65075bdb05d5457
+Content-Type: application/json
+Authorization: ThanhDuy eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjU0MTFiZDcyYWIyNmU2MGQxMWRiZTciLCJpYXQiOjE2NDk5MTk2MTN9.8Xgdn4q-vcae5HVlTo1SBl2a2iGucQ1gluaiImEG4no
+
+
+
+
